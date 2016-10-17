@@ -45,6 +45,14 @@
 			<artifactId>jgraph</artifactId>
 			<version>5.13.0.0</version>
 		</dependency> -->
+		
+		<!-- https://mvnrepository.com/artifact/jfree/jfreechart -->
+		<dependency>
+		    <groupId>jfree</groupId>
+		    <artifactId>jfreechart</artifactId>
+		    <version>1.0.9</version>
+		</dependency>
+		
 
 		<dependency>
 			<groupId>org.apache.commons</groupId>

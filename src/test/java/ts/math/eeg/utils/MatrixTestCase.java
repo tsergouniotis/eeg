@@ -1,21 +1,12 @@
 package ts.math.eeg.utils;
 
-import org.apache.commons.math3.complex.Complex;
-import org.apache.commons.math3.complex.ComplexField;
-import org.apache.commons.math3.linear.Array2DRowFieldMatrix;
 import org.apache.commons.math3.linear.Array2DRowRealMatrix;
-import org.apache.commons.math3.linear.RealMatrix;
-import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics;
-import org.apache.commons.math3.transform.DftNormalization;
-import org.apache.commons.math3.transform.FastFourierTransformer;
-import org.apache.commons.math3.transform.TransformType;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import ts.math.eeg.file.readers.EegFileReader;
 import ts.math.eeg.mi.MutualInformationMatrixGenerator;
-import ts.math.eeg.surrogate.SurrogateMatrixGenerator;
 
 public class MatrixTestCase {
 
@@ -61,18 +52,4 @@ public class MatrixTestCase {
 		Assert.assertEquals(mi[0].length, electrodes);
 		Assert.assertEquals(mi[0][0].length, times / frame);
 	}
-
-	@Test
-	public void testSurrogateMatrix() {
-		
-		
-
-		double[][] foo = new SurrogateMatrixGenerator(frame).calculate(input);
-
-
-
-	}
-
-
-
 }
